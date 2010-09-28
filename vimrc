@@ -31,6 +31,9 @@ set insertmode
 " show line numbers
 set number
 
+" read file again, if it was changed outside of vim
+set autoread
+
 " open/save/close
 ino <C-e> <C-o>:e!<Space>
 ino <F2> <C-o>:w<CR>
@@ -73,3 +76,4 @@ vno <S-Insert> P
 " don't bell or blink
 set noeb
 set vb t_vb=
+
