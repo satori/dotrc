@@ -41,6 +41,21 @@ imap <silent><C-n> <C-o>:NERDTreeToggle<CR>
 " ignore some files in NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$']
 
+" buffer explorer
+nmap <C-S-r> :BufExplorer<CR>
+vmap <C-S-r> :BufExplorer<CR>
+imap <C-S-r> <C-o>:BufExplorer<CR>
+
+" previous buffer
+nmap <A-Left> :bp<CR>
+vmap <A-Left> :bp<CR>
+imap <A-Left> <C-o>:bp<CR>
+
+" next buffer
+nmap <A-Right> :bn<CR>
+vmap <A-Right> :bn<CR>
+imap <A-Right> <C-o>:bn<CR>
+
 " close file
 ino <C-q> <C-o>:q<CR>
 nno <C-q> :q<CR>
