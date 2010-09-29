@@ -43,35 +43,28 @@ ino <C-q> <C-o>:q!<CR>
 " some usefull hotkeys from my Eclipse
 ino <C-d> <C-o>dd
 
+" move lines in normal, insert and visual modes
+nno <A-Down> :m+<CR>==
+ino <A-Down> <Esc>:m+<CR>==gi
+vno <A-Down> :m'>+<CR>gv=gv
+nno <A-Up> :m-2<CR>==
+ino <A-Up> :m-2<CR>==gi
+vno <A-Up> :m-2<CR>gv=gv
+
 " tab management
 ino <silent><C-t> <C-o>:tabnew<CR>
 ino <silent><C-Tab> <C-o>:tabnext<CR>
 ino <silent><C-S-Tab> <C-o>:tabprevious<CR>
 ino <silent><C-w> <C-o>:silent! tabclose<CR>
 nno <silent><C-w> :silent! tabclose<CR>
+ino <M-Down> <C-o><Del>
 
 " undo/redo
 ino <C-z> <C-o>:undo<CR>
 ino <C-y> <C-o>:redo<CR>
 
-" selection
-ino <S-Down> <C-o>V
-vno <S-Down> <Down>
-ino <S-Up> <C-o>V<Up>
-vno <S-Up> <Up>
-ino <S-Right> <C-o>v
-vno <S-Right> <Right>
-ino <S-Left> <Left><C-o>v
-vno <S-Left> <Left>
-ino <S-End> <C-o>v<End>
-ino <S-Home> <C-o>v<Home>
-
-" copy/paste
-vno <C-c> y
-ino <C-v> <C-o>P
-ino <S-Insert> <C-o>P
-vno <C-v> P
-vno <S-Insert> P
+" selection, cut/copy/paste
+so $VIMRUNTIME/mswin.vim
 
 " don't bell or blink
 set noeb
