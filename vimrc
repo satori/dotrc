@@ -57,7 +57,6 @@ ino <silent><C-Tab> <C-o>:tabnext<CR>
 ino <silent><C-S-Tab> <C-o>:tabprevious<CR>
 ino <silent><C-w> <C-o>:silent! tabclose<CR>
 nno <silent><C-w> :silent! tabclose<CR>
-ino <M-Down> <C-o><Del>
 
 " undo/redo
 ino <C-z> <C-o>:undo<CR>
