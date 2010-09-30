@@ -75,8 +75,6 @@ vno <A-Up> :m-2<CR>gv=gv
 " tab management
 ino <silent><C-t> <C-o>:tabnew<CR>
 nno <silent><C-t> :tabnew<CR>
-ino <silent><C-w> <C-o>:silent! tabclose<CR>
-nno <silent><C-w> :silent! tabclose<CR>
 
 " don't bell or blink
 set noeb
