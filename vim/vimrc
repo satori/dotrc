@@ -31,6 +31,9 @@ set number
 " read file again, if it was changed outside of vim
 set autoread
 
+" use wildmenu
+set wildmenu
+
 " selection, cut/copy/paste
 so $VIMRUNTIME/mswin.vim
 
@@ -40,6 +43,10 @@ imap <silent><C-n> <C-o>:NERDTreeToggle<CR>
 
 " ignore some files in NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$']
+let NERDTreeQuitOnOpen=1
+
+" Project settings
+let g:proj_flags = "gimst"
 
 " previous buffer
 nmap <A-Left> :bp<CR>
