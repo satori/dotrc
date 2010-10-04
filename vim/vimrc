@@ -48,16 +48,6 @@ let NERDTreeQuitOnOpen=1
 " Project settings
 let g:proj_flags = "gimst"
 
-" previous buffer
-nmap <A-Left> :bp<CR>
-vmap <A-Left> :bp<CR>
-imap <A-Left> <C-o>:bp<CR>
-
-" next buffer
-nmap <A-Right> :bn<CR>
-vmap <A-Right> :bn<CR>
-imap <A-Right> <C-o>:bn<CR>
-
 " close file
 ino <C-q> <C-o>:q<CR>
 nno <C-q> :q<CR>
@@ -82,3 +72,11 @@ nno <silent><C-t> :tabnew<CR>
 set noeb
 set vb t_vb=
 
+" filetype specific options
+
+let ropevim_vim_completion = 1
+
+augroup python
+	au!
+	au BufEnter,BufWinEnter *.py ino <buffer><silent> <C-Space> <C-r>=RopeCodeAssistInsertMode()<CR>
+augroup END
