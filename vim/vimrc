@@ -22,6 +22,9 @@ set tabstop=4 shiftwidth=4 softtabstop=4 autoindent smartindent
 " prefer unix over windows over mac formats
 set ffs=unix,dos,mac
 
+" show tabs and trailing spaces
+set listchars=tab:>-,trail:-
+
 " utf-8 default encoding
 set enc=utf-8
 
@@ -61,7 +64,7 @@ nno <A-Down> :m+<CR>==
 ino <A-Down> <Esc>:m+<CR>==gi
 vno <A-Down> :m'>+<CR>gv=gv
 nno <A-Up> :m-2<CR>==
-ino <A-Up> :m-2<CR>==gi
+ino <A-Up> <Esc>:m-2<CR>==gi
 vno <A-Up> :m-2<CR>gv=gv
 
 " tab management
@@ -79,4 +82,11 @@ let ropevim_vim_completion = 1
 augroup python
 	au!
 	au BufEnter,BufWinEnter *.py ino <buffer><silent> <C-Space> <C-r>=RopeCodeAssistInsertMode()<CR>
+	au BufEnter,BufWinEnter *.py setlocal expandtab
 augroup END
+
+augroup html
+	au!
+	au BufEnter,BufWinEnter *.html setlocal noet
+augroup END
+
