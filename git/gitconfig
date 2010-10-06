@@ -1,0 +1,13 @@
+[user]
+	name = MaximBublis
+	email = b@codemonkey.ru
+
+[color]
+	ui = auto
+
+[core]
+	excludesfile = ~/.git/gitignore
+
+[gui]
+	commitmsgwidth = 85
+
