@@ -23,7 +23,8 @@ set tabstop=4 shiftwidth=4 softtabstop=4 autoindent smartindent
 set ffs=unix,dos,mac
 
 " show tabs and trailing spaces
-set listchars=tab:>-,trail:-
+set listchars=tab:>·,trail:·
+set list
 
 " utf-8 default encoding
 set enc=utf-8
@@ -74,6 +75,11 @@ nno <silent><C-t> :tabnew<CR>
 " don't bell or blink
 set noeb
 set vb t_vb=
+
+" window maximization
+if has('gui')
+	au GUIEnter * :set lines=99999 columns=99999
+endif
 
 " filetype specific options
 
