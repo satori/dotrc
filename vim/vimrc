@@ -68,6 +68,11 @@ nno <A-Up> :m-2<CR>==
 ino <A-Up> <Esc>:m-2<CR>==gi
 vno <A-Up> :m-2<CR>gv=gv
 
+" tabulate/untabulate text
+smap <Tab> <C-o>>
+smap <S-Tab> <C-o><
+ino <S-Tab> <C-o><<CR>
+
 " tab management
 ino <silent><C-t> <C-o>:tabnew<CR>
 nno <silent><C-t> :tabnew<CR>
