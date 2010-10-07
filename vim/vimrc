@@ -23,7 +23,7 @@ set tabstop=4 shiftwidth=4 softtabstop=4 autoindent smartindent
 set ffs=unix,dos,mac
 
 " show tabs and trailing spaces
-set listchars=tab:>·,trail:·
+set listchars=tab:··,trail:·
 set list
 
 " utf-8 default encoding
@@ -94,6 +94,7 @@ augroup python
 	au!
 	au BufEnter,BufWinEnter *.py ino <buffer><silent> <C-Space> <C-r>=RopeCodeAssistInsertMode()<CR>
 	au BufEnter,BufWinEnter *.py setlocal expandtab
+	au BufWritePre *.py :%s/\s\+$//e
 augroup END
 
 augroup html
