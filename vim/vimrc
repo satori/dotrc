@@ -87,8 +87,12 @@ if has('gui')
 endif
 
 " filetype specific options
-
 let ropevim_vim_completion = 1
+
+" don't let sql completion ruin insert-mode.
+" annoying completions on <Left>/<Right> keys.
+let g:ftplugin_sql_omni_key_right = 'stub'
+let g:ftplugin_sql_omni_key_left = 'stub'
 
 augroup python
 	au!
