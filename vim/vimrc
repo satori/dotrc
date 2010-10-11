@@ -46,8 +46,13 @@ nmap <silent><C-n> :NERDTreeToggle<CR>
 imap <silent><C-n> <C-o>:NERDTreeToggle<CR>
 
 " ignore some files in NERDTree
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$']
-let NERDTreeQuitOnOpen=1
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$']
+let NERDTreeQuitOnOpen = 1
+
+" NERDCommenter settings
+let NERDComMappings = 0
+map <M-/> <plug>NERDCommenterToggle
+imap <M-/> <plug>NERDCommenterToggle
 
 " Project settings
 let g:proj_flags = "gimst"
@@ -87,6 +92,7 @@ if has('gui')
 endif
 
 " filetype specific options
+let ropevim_enable_shortcuts = 0
 let ropevim_vim_completion = 1
 
 " don't let sql completion ruin insert-mode.
