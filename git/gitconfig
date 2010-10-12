@@ -5,8 +5,12 @@
 [color]
 	ui = auto
 
+[color "diff"]
+	whitespace = yellow reverse
+
 [core]
 	excludesfile = ~/.git/gitignore
+	whitespace = trailing-space
 
 [gui]
 	commitmsgwidth = 85
