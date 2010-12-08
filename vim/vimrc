@@ -54,9 +54,6 @@ let NERDComMappings = 0
 map <M-/> <plug>NERDCommenterToggle
 imap <M-/> <plug>NERDCommenterToggle
 
-" Project settings
-let g:proj_flags = "gimst"
-
 " close file
 ino <C-q> <C-o>:q<CR>
 nno <C-q> :q<CR>
