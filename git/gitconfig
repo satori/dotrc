@@ -15,3 +15,5 @@
 [gui]
 	commitmsgwidth = 85
 
+[svn]
+	rmdir = True
