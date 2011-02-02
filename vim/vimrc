@@ -42,11 +42,11 @@ set wildmenu
 so $VIMRUNTIME/mswin.vim
 
 " open/close NERDTree
-nmap <silent><C-n> :NERDTreeToggle<CR>
-imap <silent><C-n> <C-o>:NERDTreeToggle<CR>
+nmap <silent><C-e> :NERDTreeToggle<CR>
+imap <silent><C-e> <C-o>:NERDTreeToggle<CR>
 
 " ignore some files in NERDTree
-let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$']
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$', '\.o$']
 let NERDTreeQuitOnOpen = 1
 
 " NERDCommenter settings
@@ -74,10 +74,6 @@ vno <A-Up> :m-2<CR>gv=gv
 smap <Tab> <C-o>>
 smap <S-Tab> <C-o><
 ino <S-Tab> <C-o><<CR>
-
-" tab management
-ino <silent><C-t> <C-o>:tabnew<CR>
-nno <silent><C-t> :tabnew<CR>
 
 " don't bell or blink
 set noeb
