@@ -45,6 +45,9 @@ so $VIMRUNTIME/mswin.vim
 nmap <silent><C-e> :NERDTreeToggle<CR>
 imap <silent><C-e> <C-o>:NERDTreeToggle<CR>
 
+" do not render html
+let html_no_rendering = 1
+
 " ignore some files in NERDTree
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$', '\.o$']
 let NERDTreeQuitOnOpen = 1
