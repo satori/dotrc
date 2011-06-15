@@ -101,15 +101,6 @@ augroup vimrc
 	au BufEnter,BufWinEnter *vimrc setlocal noexpandtab
 augroup END
 
-augroup python
-	au!
-	au BufEnter,BufWinEnter *.py setlocal expandtab
-	au BufEnter,BufWinEnter *.py ino <buffer><silent> ( ()<Left>
-	au BufEnter,BufWinEnter *.py ino <buffer><silent> [ []<Left>
-	au BufEnter,BufWinEnter *.py ino <buffer><silent> { {}<Left>
-	au BufWritePre *.py :%s/\s\+$//e
-augroup END
-
 augroup html
 	au!
 	au BufEnter,BufWinEnter *.html setlocal expandtab
