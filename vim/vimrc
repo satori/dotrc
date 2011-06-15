@@ -91,8 +91,8 @@ endif
 let ropevim_enable_shortcuts = 0
 let ropevim_vim_completion = 1
 
-" don't let sql completion ruin insert-mode.
-" annoying completions on <Left>/<Right> keys.
+" don't let sql completion ruin insert-mode
+" disable annoying autocompletion on <Left>/<Right> keys
 let g:ftplugin_sql_omni_key_right = 'stub'
 let g:ftplugin_sql_omni_key_left = 'stub'
 
