@@ -96,6 +96,11 @@ let ropevim_vim_completion = 1
 let g:ftplugin_sql_omni_key_right = 'stub'
 let g:ftplugin_sql_omni_key_left = 'stub'
 
+augroup vimrc
+	au!
+	au BufEnter,BufWinEnter *vimrc setlocal noexpandtab
+augroup END
+
 augroup python
 	au!
 	au BufEnter,BufWinEnter *.py setlocal expandtab
