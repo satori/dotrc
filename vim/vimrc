@@ -87,10 +87,6 @@ if has('gui')
 	au GUIEnter * :set lines=99999 columns=99999
 endif
 
-" filetype specific options
-let ropevim_enable_shortcuts = 0
-let ropevim_vim_completion = 1
-
 " don't let sql completion ruin insert-mode
 " disable annoying autocompletion on <Left>/<Right> keys
 let g:ftplugin_sql_omni_key_right = 'stub'
