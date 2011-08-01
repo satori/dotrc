@@ -1,0 +1,9 @@
+[ui]
+username = Maxim Bublis <b@codemonkey.ru>
+
+[extensions]
+color =
+mq =
+
+[color]
+status.unknown = none
