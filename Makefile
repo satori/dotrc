@@ -1,8 +1,4 @@
-install: install-bash install-git install-hg install-vim
-
-install-bash:
-	rm -rf ~/.bash_aliases
-	ln -s $(PWD)/bash/aliases ~/.bash_aliases
+install: install-git install-hg install-vim
 
 install-git:
 	rm -rf ~/.git ~/.gitconfig
