@@ -52,11 +52,6 @@ let html_no_rendering = 1
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$', '\.o$']
 let NERDTreeQuitOnOpen = 0
 
-" NERDCommenter settings
-let NERDComMappings = 0
-map <M-/> <plug>NERDCommenterToggle
-imap <M-/> <plug>NERDCommenterToggle
-
 " close file
 ino <C-q> <C-o>:q<CR>
 nno <C-q> :q<CR>
