@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.mako setfiletype mako
+au BufRead,BufNewFile *.go setfiletype go
