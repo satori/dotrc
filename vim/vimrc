@@ -52,10 +52,6 @@ let NERDTreeQuitOnOpen = 0
 ino <C-q> <C-o>:q<CR>
 nno <C-q> :q<CR>
 
-" some usefull hotkeys from my Eclipse
-ino <C-d> <C-o>dd
-nno <C-d> dd
-
 " move lines in normal, insert and visual modes
 nno <A-Down> :m+<CR>==
 ino <A-Down> <Esc>:m+<CR>==gi
