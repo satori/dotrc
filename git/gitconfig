@@ -17,3 +17,6 @@
 
 [svn]
 	rmdir = True
+
+[push]
+	default = simple
