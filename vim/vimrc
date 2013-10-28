@@ -3,9 +3,9 @@ set nocompatible
 
 " syntax highlighting
 syntax on
+colorscheme solarized
 
 if has("gui_running")
-	colors desert
 	" line numbers color
 	hi LineNr guifg=grey45 guibg=grey20
 endif
