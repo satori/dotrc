@@ -34,9 +34,6 @@ set autoread
 " use wildmenu
 set wildmenu
 
-" selection, cut/copy/paste
-so $VIMRUNTIME/mswin.vim
-
 " open/close NERDTree
 nmap <silent><C-e> :NERDTreeToggle<CR>
 imap <silent><C-e> <C-o>:NERDTreeToggle<CR>
