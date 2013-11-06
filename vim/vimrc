@@ -4,6 +4,7 @@ set nocompatible
 " syntax highlighting
 syntax on
 colorscheme solarized
+set background=dark
 
 if has("gui_running")
 	" line numbers color
