@@ -6,11 +6,6 @@ syntax on
 colorscheme solarized
 set background=dark
 
-if has("gui_running")
-	" line numbers color
-	hi LineNr guifg=grey45 guibg=grey20
-endif
-
 " enable filetype plugins and indents
 filetype on
 filetype plugin on
@@ -66,11 +61,6 @@ ino <S-Tab> <C-o><<CR>
 " don't bell or blink
 set noeb
 set vb t_vb=
-
-" window maximization
-if has('gui')
-	au GUIEnter * :set lines=99999 columns=99999
-endif
 
 " don't let sql completion ruin insert-mode
 " disable annoying autocompletion on <Left>/<Right> keys
