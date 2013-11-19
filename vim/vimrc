@@ -66,18 +66,3 @@ set vb t_vb=
 " disable annoying autocompletion on <Left>/<Right> keys
 let g:ftplugin_sql_omni_key_right = 'stub'
 let g:ftplugin_sql_omni_key_left = 'stub'
-
-augroup vimrc
-	au!
-	au BufEnter,BufWinEnter *vimrc setlocal noexpandtab
-augroup END
-
-augroup html
-	au!
-	au BufEnter,BufWinEnter *.html setlocal expandtab
-augroup END
-
-augroup css
-	au!
-	au BufEnter,BufWinEnter *.css setlocal expandtab
-augroup END
