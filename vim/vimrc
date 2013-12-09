@@ -24,6 +24,9 @@ set enc=utf-8
 " show line numbers
 set number
 
+" show cursor position
+set ruler
+
 " read file again, if it was changed outside of vim
 set autoread
 
