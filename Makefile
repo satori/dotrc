@@ -30,6 +30,7 @@ install-vim:
 	$(INSTALL) -m 0644 vim/after/ftplugin/go.vim $(DESTDIR)/.vim/after/ftplugin
 	$(INSTALL) -m 0644 vim/after/ftplugin/html.vim $(DESTDIR)/.vim/after/ftplugin
 	$(INSTALL) -m 0644 vim/after/ftplugin/python.vim $(DESTDIR)/.vim/after/ftplugin
+	$(INSTALL) -m 0644 vim/after/ftplugin/scheme.vim $(DESTDIR)/.vim/after/ftplugin
 	$(INSTALL) -m 0644 vim/after/ftplugin/vimrc.vim $(DESTDIR)/.vim/after/ftplugin
 	$(INSTALL) -m 0644 vim/autoload/nerdtree.vim $(DESTDIR)/.vim/autoload
 	$(INSTALL) -m 0644 vim/colors/solarized.vim $(DESTDIR)/.vim/colors
