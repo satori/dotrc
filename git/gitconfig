@@ -8,9 +8,6 @@
 	excludesfile = ~/.git/gitignore
 	whitespace = trailing-space
 
-[gui]
-	commitmsgwidth = 85
-
 [push]
 	default = simple
 
