@@ -19,6 +19,9 @@ set ttyfast
 
 set tabstop=4 shiftwidth=4 softtabstop=4 autoindent smartindent
 
+" fix backspace key
+set backspace=indent,eol,start
+
 " prefer unix over windows over mac formats
 set ffs=unix,dos,mac
 
