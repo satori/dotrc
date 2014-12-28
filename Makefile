@@ -18,4 +18,4 @@ install-ssh:
 	$(INSTALL) -m 0644 ssh/config $(DESTDIR)/.ssh/config
 
 install-vim:
-	$(MAKE) -C vim DESTDIR=$(DESTDIR)/.vim install
+	$(MAKE) -C vim DESTDIR=$(DESTDIR) install
