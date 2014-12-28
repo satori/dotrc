@@ -1,8 +1,6 @@
 INSTALL = install
 
 VIM_DIRS := after/ftplugin \
-	colors \
-	doc \
 	syntax
 
 VIM_DIRS += $(shell find bundle -type d)
@@ -13,8 +11,6 @@ VIM_FILES := after/ftplugin/css.vim \
 	after/ftplugin/python.vim \
 	after/ftplugin/scheme.vim \
 	after/ftplugin/vimrc.vim \
-	colors/solarized.vim \
-	doc/tags \
 	syntax/go.vim \
 	filetype.vim
 
