@@ -8,7 +8,8 @@ install: install-git install-hg install-vim
 
 install-git:
 	$(INSTALL) -m 0644 git/gitconfig $(DESTDIR)/.gitconfig
-	$(INSTALL) -m 0644 git/gitignore $(DESTDIR)/.gitignore
+	$(INSTALL) -d $(DESTDIR)/.git
+	$(INSTALL) -m 0644 git/gitignore $(DESTDIR)/.git/gitignore
 
 install-hg:
 	$(INSTALL) -m 0644 hg/hgrc $(DESTDIR)/.hgrc
