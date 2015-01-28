@@ -15,7 +15,7 @@ install-hg:
 	$(INSTALL) -m 0644 hg/hgrc $(DESTDIR)/.hgrc
 
 install-ssh:
-	$(INSTALL) -m 0644 -d $(DESTDIR)/.ssh
+	$(INSTALL) -d $(DESTDIR)/.ssh
 	$(INSTALL) -m 0644 ssh/config $(DESTDIR)/.ssh/config
 
 install-vim:
