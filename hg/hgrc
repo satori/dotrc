@@ -1,9 +1,18 @@
-[ui]
-username = Maxim Bublis <b@codemonkey.ru>
+[color]
+status.unknown = none
 
 [extensions]
 color =
 mq =
+pager =
+progress =
+purge =
+rebase =
+record =
 
-[color]
-status.unknown = none
+[pager]
+pager = less -FRX
+
+[ui]
+username = Maxim Bublis <b@codemonkey.ru>
+verbose = True
