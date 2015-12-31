@@ -1,5 +1,5 @@
 INSTALL = install
-DESTDIR = $(HOME)
+DESTDIR ?= $(HOME)
 
 
 default:
