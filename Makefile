@@ -18,5 +18,8 @@ install-ssh:
 	$(INSTALL) -d $(DESTDIR)/.ssh
 	$(INSTALL) -m 0644 ssh/config $(DESTDIR)/.ssh/config
 
+install-shell:
+	$(INSTALL) -m 0644 shell/profile $(DESTDIR)/.profile
+
 install-vim:
 	$(MAKE) -C vim DESTDIR=$(DESTDIR) install
