@@ -5,7 +5,7 @@
 	whitespace = yellow reverse
 
 [core]
-	excludesfile = ~/.git/gitignore
+	excludesfile = ~/.git.d/gitignore
 	whitespace = trailing-space
 
 [push]
