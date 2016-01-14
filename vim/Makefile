@@ -1,7 +1,6 @@
 INSTALL = install
 
-VIM_DIRS := after/ftplugin \
-	syntax
+VIM_DIRS := after/ftplugin
 
 VIM_DIRS += $(shell find bundle -type d)
 
@@ -10,9 +9,7 @@ VIM_FILES := after/ftplugin/css.vim \
 	after/ftplugin/html.vim \
 	after/ftplugin/python.vim \
 	after/ftplugin/scheme.vim \
-	after/ftplugin/vimrc.vim \
-	syntax/go.vim \
-	filetype.vim
+	after/ftplugin/vimrc.vim
 
 VIM_FILES += $(shell find bundle -type f ! -name '.git*')
 
