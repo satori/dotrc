@@ -1,2 +1,3 @@
 Host *
-ForwardAgent yes
+# CVE-2016-0777 and CVE-2016-0778
+UseRoaming no
