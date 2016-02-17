@@ -14,5 +14,6 @@ record =
 pager = less -FRX
 
 [ui]
-username = Maxim Bublis <b@codemonkey.ru>
 verbose = True
+
+%include .hgrc.local
