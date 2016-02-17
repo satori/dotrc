@@ -17,6 +17,5 @@
 [svn]
 	rmdir = True
 
-[user]
-	name = Maxim Bublis
-	email = b@codemonkey.ru
+[include]
+	path = .gitconfig.local
