@@ -49,6 +49,7 @@ let html_no_rendering = 1
 
 " ignore some files in NERDTree
 let NERDTreeIgnore = ['\~$', '\.pyc$', '\.pyo$', '\.o$']
+let NERDTreeNaturalSort = 1
 let NERDTreeQuitOnOpen = 0
 
 " tabulate/untabulate text
